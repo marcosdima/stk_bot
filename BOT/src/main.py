@@ -92,10 +92,8 @@ async def on_message(message):
 
 
 
+###  Comandos para el bot  ###
 
 
-### Comandos para el bot ###
-
-
-bot.run()
+bot.run('ssss')
 
