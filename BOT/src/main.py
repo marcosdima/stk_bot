@@ -12,8 +12,11 @@ async def on_message(message):
     direccion_archivo_de_stks = direccion + '/users/stks_' + str(message.author)+ '_' + str(message.author.id)+ '_.txt' # Es la dirección donde se encuentra el archivo del usuario en cuestión.
     id_canal = message.channel.id
 
+    if not os.path.exists('Servidores'):
+        os.mkdir('Servidores')
 
     if not os.path.exists(direccion): # Prepara la carpeta en caso de que no exista
+
         os.mkdir(direccion)
         os.mkdir(direccion + '/users')
 
